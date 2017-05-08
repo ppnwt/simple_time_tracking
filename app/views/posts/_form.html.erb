@@ -15,9 +15,8 @@
     <section class="container">
 		<div class="container-page">				
 			<div class="col-md-6">	
-      <h1>Add time</h1>
-			
-  <div class="field">
+      
+    <div class="field">
     <%= f.label :date %>
     <%= f.date_select :date %>
   </div>
@@ -34,10 +33,15 @@
 
   <div class="field">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description  %>
   </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+<%= link_to 'Back', posts_path  %>
+   </div>
+    </section>
+  </div>
+</div>
