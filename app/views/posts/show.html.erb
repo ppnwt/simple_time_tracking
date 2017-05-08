@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <section class="container">
+		<div class="container-page">				
+			<div class="col-md-6">
+				<h3 class="dark-grey">Login</h3>
+				
+  <strong>Date:</strong>
+  <%= @post.date.strftime("%d-%b-%Y") %>
+</p>
+
+<p>
+  <strong>Timein:</strong>
+  <%= @post.timein.strftime("%H-%M-%S") %>
+</p>
+
+<p>
+  <strong>Timeout:</strong>
+  <%= @post.timeout.strftime("%H-%M-%S") %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

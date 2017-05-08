@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-05-08 14:18:36
+  timein: 2017-05-08 14:18:36
+  timeout: 2017-05-08 14:18:36
+  description: MyText
+
+two:
+  date: 2017-05-08 14:18:36
+  timein: 2017-05-08 14:18:36
+  timeout: 2017-05-08 14:18:36
+  description: MyText
