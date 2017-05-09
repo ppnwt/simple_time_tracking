@@ -1,0 +1,37 @@
+<%= form_for(leaveday) do |f| %>
+  <% if leaveday.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(leaveday.errors.count, "error") %> prohibited this leaveday from being saved:</h2>
+
+      <ul>
+      <% leaveday.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :leavetype %>
+    <%= f.text_field :leavetype %>
+  </div>
+
+  <div class="field">
+    <%= f.label :duration %>
+    <%= f.text_field :duration %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

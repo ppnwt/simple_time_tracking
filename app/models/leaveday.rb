@@ -1,0 +1,2 @@
+class Leaveday < ApplicationRecord
+end

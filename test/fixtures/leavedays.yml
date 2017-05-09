@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-05-09 14:26:59
+  leavetype: MyString
+  duration: 1.5
+  description: MyText
+
+two:
+  date: 2017-05-09 14:26:59
+  leavetype: MyString
+  duration: 1.5
+  description: MyText

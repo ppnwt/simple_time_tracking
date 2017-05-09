@@ -1,23 +1,25 @@
+<nav class="navbar navbar-default navbar-fixed-left">
 
-<div class="container">
-  <div class="nav nav-tabs">
-  <ul>
-        </li><%= link_to 'Home', root_path %></li>
-     
-
+  <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><%= link_to 'Home', root_path %></li>
+    
        <% unless current_user %>
-       </li> <%= link_to 'SignIn', new_user_session_path %></li>
-         </li> <%= link_to 'Signup', new_user_registration_path %></li>
-         
+
+       <li role="presentation"> <%= link_to 'SignIn', new_user_session_path %></li>
+       <p>  <li role="presentation"> <%= link_to 'Signup', new_user_registration_path %></li></p>
          
        <% else %>
-        </li>  <%= link_to 'Profile', edit_user_registration_path %></li>
-      </li>  <%= link_to 'SignOut', destroy_user_session_path, :method => :delete %></li>
+       <li role="presentation"  ><%= link_to 'Time tracking', root_path %></li>
+       <li role="presentation"  ><%= link_to 'Take Leave', leavedays_path %></li>  
+       <li role="presentation">  <%= link_to 'Profile', edit_user_registration_path %></li>
+      <li role="presentation">  <%= link_to 'SignOut', destroy_user_session_path, :method => :delete %></li>
       
       <% end %>
-  </ul>
-    </div>
-    </div>
+</nav>
+   </div>
+      </ul>
+ 
+
 <div class="container-fluid">
     <section class="container">
 		<div class="container-page">				
