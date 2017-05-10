@@ -4,7 +4,7 @@ class LeavedaysController < ApplicationController
   # GET /leavedays
   # GET /leavedays.json
   def index
-    @leavedays = Leaveday.all
+    @leavedays = Leaveday.all.order("created_at DESC")
   end
 
   # GET /leavedays/1
@@ -14,7 +14,7 @@ class LeavedaysController < ApplicationController
 
   # GET /leavedays/new
   def new
-    @leaveday = Leaveday.new
+    @leaveday = current_user.leavedays.build
   end
 
   # GET /leavedays/1/edit
@@ -24,7 +24,7 @@ class LeavedaysController < ApplicationController
   # POST /leavedays
   # POST /leavedays.json
   def create
-    @leaveday = Leaveday.new(leaveday_params)
+    @leaveday = current_user.leavedays.build(leaveday_params)
 
     respond_to do |format|
       if @leaveday.save

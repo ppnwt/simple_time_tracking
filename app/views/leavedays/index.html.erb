@@ -10,8 +10,9 @@
     <tr>
       <th>Date</th>
       <th>Leavetype</th>
-      <th>Duration</th>
+      <th>Duration(day)</th>
       <th>Description</th>
+      <th>Name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,13 +20,16 @@
   <tbody>
     <% @leavedays.each do |leaveday| %>
       <tr>
+      <% if leaveday.user == current_user %>
         <td><%= leaveday.date.strftime("%d-%b-%Y") %></td>
         <td><%= leaveday.leavetype %></td>
         <td><%= leaveday.duration %></td>
         <td><%= leaveday.description %></td>
+        <td><%= leaveday.user.email %></td>
         <td><%= link_to 'Show', leaveday %></td>
         <td><%= link_to 'Edit', edit_leaveday_path(leaveday) %></td>
         <td><%= link_to 'Destroy', leaveday, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -34,7 +38,7 @@
 
 <br>
 
-<%= link_to 'New Leaveday', new_leaveday_path %>
+<%= link_to 'New Leaveday', new_leaveday_path, class:"btn btn-default" %>
 
    </div>
   </div>

@@ -11,14 +11,9 @@
     </div>
   <% end %>
   
-<div class="container-fluid">
-    <section class="container">
-		<div class="container-page">				
-			<div class="col-md-6">	
-      
     <div class="field">
     <%= f.label :date %>
-    <%= f.date_select :date %>
+    <%= f.text_field  :date, :value => Date.today, :disabled => true %>
   </div>
 
   <div class="field">
