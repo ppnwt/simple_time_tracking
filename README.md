@@ -1,17 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Simple Time Tracking Application
+
+Features :
+
+* Signup , SignIn , Login , Logout system with devise gems
+* Can add Timein , Timeout 
+* Can Take leave  Annual leave, Personal leave , Sick leave
+* Searh bar time durations
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.4.1
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation : sqlite3
 
 * Database initialization
 
