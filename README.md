@@ -3,7 +3,7 @@
 A Simple Time Tracking Application
 
 Features :
-<<<<<<< HEAD
+
 
 * Sign-up , Sign-in , Login , Logout system with devise gems
 * Can add Timein , Timeout 
@@ -30,4 +30,4 @@ Things you may want to cover:
 
 * Deploy server : Heroku
 
->>>>>>> 05e6f13b5185a0dbda49897d6fbdfe7f4b9a77d0
+
