@@ -28,4 +28,6 @@ Things you may want to cover:
 
 * Database creation : sqlite3
 
+* Deploy server : Heroku
+
 >>>>>>> 05e6f13b5185a0dbda49897d6fbdfe7f4b9a77d0
