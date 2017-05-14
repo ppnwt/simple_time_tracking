@@ -7,7 +7,7 @@ Features :
 * Sign-up , Sign-in , Login , Logout system with devise gems
 * Can add Timein , Timeout 
 * Can Take leave  Annual leave, Personal leave , Sick leave
-* Searh bar time durations
+* Search bar time durations
 
 Things you may want to cover:
 
