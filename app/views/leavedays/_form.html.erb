@@ -11,10 +11,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :date %>
-    <%= f.date_select :date %>
+    <%= f.label :datefrom %>
+    <%= f.date_select :datefrom %>
   </div>
 
+    <div class="field">
+    <%= f.label :dateto %>
+    <%= f.date_select :dateto %>
+  </div>
 
   <div class="field">
     <%= f.label :leavetype %>

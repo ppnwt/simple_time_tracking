@@ -69,6 +69,6 @@ class LeavedaysController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def leaveday_params
-      params.require(:leaveday).permit(:date, :leavetype, :duration, :description)
+      params.require(:leaveday).permit(:datefrom, :dateto, :leavetype, :duration, :description)
     end
 end

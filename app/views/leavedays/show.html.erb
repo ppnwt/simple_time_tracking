@@ -5,8 +5,14 @@
     <h2>Show leaveday</h2>
 <p>
   <strong>Date:</strong>
-  <%= @leaveday.date.strftime("%d-%b-%Y") %>
+  <%= @leaveday.datefrom.strftime("%d-%m-%Y") %>
 </p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @leaveday.dateto.strftime("%d-%m-%Y") %>
+</p>
+
 
 <p>
   <strong>Leavetype:</strong>
