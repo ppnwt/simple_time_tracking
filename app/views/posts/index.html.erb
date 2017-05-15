@@ -14,8 +14,8 @@
                       <%= text_field_tag 'search[date_to]' %>
                       <%= submit_tag 'Search', class: 'btn search-button' %>
                       <% end %>
-
-  <thead>
+                      
+  <thead> 
     <tr>
       <th>Date</th>
       <th>Time-in</th>
@@ -35,9 +35,10 @@
           <td><%= post.timeout.strftime("%H:%M:%S") %></td>
           <td><%= post.description %></td>
           <td><%= post.user.email %></td>
-            <td><%= link_to 'Show', post, class:'btn btn-sm btn-primary' %></td>
-            <td><%= link_to 'Edit', edit_post_path(post), class:'btn btn-sm btn-info' %></td>
-            <td><%= link_to 'Delete', post, class:'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure want to delete ?' } %></td>
+          <td><%= link_to 'Show', post, class:'btn btn-sm btn-primary' %></td>
+        <% if post.user == current_user %>
+          <td><%= link_to 'Delete', post, class:'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure want to delete ?' } %></td>
+        <% end %>
    
    </div>
   </div>

@@ -37,8 +37,10 @@
         <td><%= leaveday.description %></td>
         <td><%= leaveday.user.email %></td>
         <td><%= link_to 'Show', leaveday, class:'btn btn-sm btn-primary' %></td>
+      <% if leaveday.user == current_user %>  
         <td><%= link_to 'Edit', edit_leaveday_path(leaveday), class:'btn btn-sm btn-info' %></td>
-        <td><%= link_to 'Destroy', leaveday, class:'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', leaveday, class:'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
        
       </tr>
     <% end %>
