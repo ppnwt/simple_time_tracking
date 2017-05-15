@@ -9,7 +9,7 @@ Features :
 * Can Take leave  Annual leave, Personal leave , Sick leave
 * Search bar time durations
 
-Things you may want to cover:
+Configuration :
 
 * Ruby version 2.4.1
 
