@@ -1,17 +1,17 @@
 <nav class="navbar navbar-default navbar-fixed-left">
 
 <ul class="nav nav-tabs">
-<p> <li role="presentation" class="active"><%= link_to 'Home', root_path %></li></p>
+     <p> <li role="presentation" class="active"><%= link_to 'Home', root_path %></li></p>
 
 <% unless current_user %>
 
-<p> <li role="presentation"> <%= link_to 'SignIn', new_user_session_path %></li></p>
-<p> <li role="presentation"> <%= link_to 'Signup', new_user_registration_path %></li></p>
+        <p> <li role="presentation"> <%= link_to 'SignIn', new_user_session_path %></li></p>
+        <p> <li role="presentation"> <%= link_to 'Signup', new_user_registration_path %></li></p>
 <% else %>
-<p> <li role="presentation" ><%= link_to 'Time tracking', posts_path %></li></p>
-<p> <li role="presentation" ><%= link_to 'Take Leave', leavedays_path %></li> </p>
-<p> <li role="presentation"> <%= link_to 'Profile', edit_user_registration_path %></li></p>
-<p> <li role="presentation"> <%= link_to 'SignOut', destroy_user_session_path, :method => :delete %></li></p>
+        <p> <li role="presentation" ><%= link_to 'Time tracking', posts_path %></li></p>
+        <p> <li role="presentation" ><%= link_to 'Take Leave', leavedays_path %></li> </p>
+        <p> <li role="presentation"> <%= link_to 'Profile', edit_user_registration_path %></li></p>
+        <p> <li role="presentation"> <%= link_to 'SignOut', destroy_user_session_path, :method => :delete %></li></p>
 <% end %>
 </nav>
 </div>
@@ -27,10 +27,13 @@
 
 <% if flash[:notice] %>
     <div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Success!</strong> Indicates a successful or positive action.
     </div>
+
 <% elsif flash[:alert] %>
     <div class="alert alert-warning">
+     <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Warning!</strong> You need to sign in or sign up before continuing.
     </div>
 <% end %>

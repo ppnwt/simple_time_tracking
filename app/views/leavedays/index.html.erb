@@ -8,7 +8,7 @@
                 <table class="table table-hover">
   <thead>
     <tr>
-      <th>Date-from</th>
+      <th>Date-From</th>
       <th>Date-To</th>
        <th>Duration(day)</th>
       <th>Leavetype</th>  
@@ -21,17 +21,17 @@
   <tbody>
     <% @leavedays.each do |leaveday| %>
       <tr>
-      <% if leaveday.user == current_user %>
+  
         <td><%= leaveday.datefrom.strftime("%d-%b-%Y") %></td>
         <td><%= leaveday.dateto.strftime("%d-%b-%Y") %></td>
         <td><%= leaveday.duration %></td>
         <td><%= leaveday.leavetype %></td>
         <td><%= leaveday.description %></td>
         <td><%= leaveday.user.email %></td>
-        <td><%= link_to 'Show', leaveday %></td>
-        <td><%= link_to 'Edit', edit_leaveday_path(leaveday) %></td>
-        <td><%= link_to 'Destroy', leaveday, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
+        <td><%= link_to 'Show', leaveday, class:'btn btn-sm btn-primary' %></td>
+        <td><%= link_to 'Edit', edit_leaveday_path(leaveday), class:'btn btn-sm btn-info' %></td>
+        <td><%= link_to 'Destroy', leaveday, class:'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+       
       </tr>
     <% end %>
   </tbody>

@@ -21,17 +21,16 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-      <% if post.user == current_user %>
-      
+     
           <td><%= post.date.strftime("%d-%b-%Y") %></td>
           <td><%= post.timein.strftime("%H:%M:%S") %></td>
           <td><%= post.timeout.strftime("%H:%M:%S") %></td>
           <td><%= post.description %></td>
           <td><%= post.user.email %></td>
-            <td><%= link_to 'Show', post %></td>
-            <td><%= link_to 'Edit', edit_post_path(post) %></td>
-            <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure want to delete ?' } %></td>
-        <% end %>
+            <td><%= link_to 'Show', post, class:'btn btn-sm btn-primary' %></td>
+            <td><%= link_to 'Edit', edit_post_path(post), class:'btn btn-sm btn-info' %></td>
+            <td><%= link_to 'Delete', post, class:'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure want to delete ?' } %></td>
+   
    </div>
   </div>
    </div>
@@ -43,7 +42,5 @@
  
   </tbody>
 </table>
-
-<br>
 
 <%= link_to 'Add Working time', new_post_path, class:"btn btn-default" %>

@@ -27,13 +27,13 @@
 
   <div class="field">
     <%= f.label :duration%>
-    <%= f.select :duration, [ '1.0','1.5','2.0','2.5','3.0' ], :prompt => '0.5' %>
+    <%= f.select :duration, [ '2','3','4','5','6','Other' ], :prompt => '1' %>
      <%= f.label '(Day)' %>
   </div>
 
   <div class="field">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description , cols: "70", rows: "10" %>
   </div>
 
   <div class="actions">
