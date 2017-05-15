@@ -3,9 +3,11 @@
   <head>
     <title>Time Tracking</title>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag "application", "chartkick" %>
 
    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
 
@@ -18,11 +20,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
   </head>
 
   <body>
     <%= render 'shared/header' %>
+    <%= yield :charts_js %> 
     <%= yield %>
     <%= render 'shared/footer' %>
   </body>

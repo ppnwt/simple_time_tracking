@@ -33,7 +33,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'chartkick'
 gem 'googlecharts', '~> 1.6', '>= 1.6.12'
-
+gem 'active_median'
+gem 'groupdate'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
