@@ -2,5 +2,6 @@ Rails.application.routes.draw do
   resources :leavedays
   devise_for :users
   resources :posts
-  root 'posts#index'
+  resources :home
+  root 'home#index'
 end
