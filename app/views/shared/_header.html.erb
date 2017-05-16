@@ -7,7 +7,8 @@
         <p> <li role="presentation"> <%= link_to 'Signup', new_user_registration_path %></li></p>
          <p> <li role="presentation"> <%= link_to 'Search', searches_path %></li></p>
 <% else %>
-        <p> <li role="presentation" class="active"><%= link_to 'Dashboard', dashboards_path %></li></p>
+        <p> <li role="presentation" class="active"><%= link_to 'Home', root_path %></li></p>
+        <p> <li role="presentation" ><%= link_to 'Dashboard', dashboards_path %></li></p>
         <p> <li role="presentation" ><%= link_to 'Time tracking', posts_path %></li></p>
         <p> <li role="presentation" ><%= link_to 'Take Leave', leavedays_path %></li> </p>
         <p> <li role="presentation"> <%= link_to 'Profile', edit_user_registration_path %></li></p>
