@@ -18,3 +18,13 @@ Configuration :
 * Deploy server : Heroku
 
 
+
+
+Updated 16/05/18
+
+* Added dashboard page
+
+* Added Search bar period time 
+
+* Added Search bar leave day (leave type)
+
