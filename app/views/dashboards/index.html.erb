@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <section class="container">
+		  <div class="container-page">		
+     	<div class="col-md-12">	
+           
+
+                    <h1> Dashboard page<h1>
+                    <p><h4> <i>Welcome back ... </i></p></h4><br>
+                                        
+                    <hr>
+              
+                    <div class="pull-right range-query">
+                  	<p><h3> <i>Time Tracking  search </i></p></h3><br>
+                    <p><i>Description: Select period time </i></p><br>
+
+                      <%= form_tag posts_path, method: :get do %>
+                       <%= label_tag 'Date from' %>
+                      <%= text_field_tag 'search[date_from]', @search.date_from,  :placeholder => "YYYY-MM-DD" %>
+                      <%= label_tag 'Date to' %>
+                      <%= text_field_tag 'search[date_to]', @search.date_to,  :placeholder => "YYYY-MM-DD" %>
+                      <%= submit_tag 'Search', class: 'btn search-button' %>
+                      <% end %>
+
+
+                        </div>
+
+                    
+                    
+                    <div class="pull-left range-query">
+                  	<p><h3> <i>Leaveday search  </i></p></h3><br>
+                    	<p><i>Description: Input leave type following the examples below </i></p><br>
+                      <%= form_tag leavedays_path, method: :get do %>
+                       <%= label_tag 'Leave type' %>
+                      <%= text_field_tag :search, params[:search], :placeholder => "Annual leave" %>
+                      <%= submit_tag 'Search', class: 'btn search-button' %>
+                      <% end %>
+                      <br>
+                        <ul>
+                         <li> Annual leave</li><br>
+                          <li> Sick Leave</li><br>
+                          <li>Personal leave  </li><br>
+                        </ul>
+                      
+                  
+                    </div>
+
+
+			               
+
+
+</div>
+    </section>
+            </div>
+
+
+                    

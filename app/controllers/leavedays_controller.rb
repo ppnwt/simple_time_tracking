@@ -5,7 +5,8 @@ class LeavedaysController < ApplicationController
   # GET /leavedays
   # GET /leavedays.json
   def index
-    @leavedays = Leaveday.all.order("created_at DESC")
+    @leavedays = Leaveday.where(["leavetype LIKE ?", "%#{params[:search]}%"])
+   # @leavedays = Leaveday.all.order("created_at DESC")
   end
 
   # GET /leavedays/1

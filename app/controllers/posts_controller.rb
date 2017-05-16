@@ -6,10 +6,15 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.order("created_at DESC")
-    # @posts = Post.search(params[:search])
-    # @posts = Post.where(user_id: current_user.id)
+        
+         @search = PostSearch.new(params[:search])
+         @posts = @search.scope
+        # @posts = Post.all.order("created_at DESC")
+        # @posts = Post.search(params[:search])
+        # @posts = Post.where(user_id: current_user.id)
   end
+
+ 
 
   # GET /posts/1
   # GET /posts/1.json
