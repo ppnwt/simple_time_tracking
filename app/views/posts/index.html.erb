@@ -21,7 +21,7 @@
   </thead>
 
   <tbody>
-<%= line_chart @posts.group(:date).count, min: 0, max: 4, label: "All employee work today: ", download: true, xtitle: "Date", ytitle: "Employee" %>
+<%= line_chart @posts.group(:date).count, min: 0, max: 4, label: "All employee work today: ", download: true, xtitle: "Date", ytitle: "Employees" %>
 
   <br>
   <%= link_to 'Add Working time', new_post_path, class:"btn btn-default" %>

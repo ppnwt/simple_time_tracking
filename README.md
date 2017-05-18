@@ -4,10 +4,11 @@ A Simple Time Tracking Application
 
 Features :
 
-* Sign-up , Sign-in , Login , Logout system with devise gems
+* Sign-up , Sign-in , Login , Logout system with devise gem
 * Can add Timein , Timeout 
 * Can Take leave  Annual leave, Personal leave , Sick leave
 * Search bar time durations
+* Display data with BarChart, LineChart (Chartkick)
 
 Configuration :
 
@@ -30,3 +31,14 @@ Updated 16/05/18
 
 * Added Search bar leave day (leave type)
 
+
+
+Updated 18/05/18
+
+* Added new Navbar UI
+
+* Added Lato font, and added CSS to all pages
+
+* Added Chartkick to index pages 
+
+* Still bugging in search bar (time range searching)

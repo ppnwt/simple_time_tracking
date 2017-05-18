@@ -23,7 +23,7 @@
 
   <tbody>
  
-  <%= bar_chart @leavedays.group(:leavetype).sum(:duration), min: 0, max: 10, label: "Amount", download: true, xtitle: "Amount", ytitle: "Leavetype" %>
+  <%= bar_chart @leavedays.group(:leavetype).sum(:duration), min: 0, max: 10, label: "Amount", download: true, xtitle: "Amount" %>
 <br>
 <%= link_to 'New Leaveday', new_leaveday_path, class:"btn btn-default" %>
 <br>
