@@ -2,7 +2,7 @@
     <section class="container">
 		<div class="container-page">				
 			<div class="col-md-12">	
-        <h1>Time Tracking </h1>
+        <h1>Time Tracking </h1><i>Show all data</i>
           <div class="media">
               <div class="media-body">
                 <table class="table table-hover">
@@ -21,6 +21,11 @@
   </thead>
 
   <tbody>
+<%= line_chart @posts.group(:date).count, min: 0, max: 4, label: "All employee work today: ", download: true, xtitle: "Date", ytitle: "Employee" %>
+
+  <br>
+  <%= link_to 'Add Working time', new_post_path, class:"btn btn-default" %>
+  <br>
     <% @posts.each do |post| %>
       <tr>
      
@@ -45,5 +50,7 @@
  
   </tbody>
 </table>
+<br>
 
-<%= link_to 'Add Working time', new_post_path, class:"btn btn-default" %>
+
+

@@ -1,23 +1,60 @@
-<nav class="navbar navbar-default navbar-fixed-left">
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-left">
 <ul class="nav nav-tabs">
-<% unless current_user %>
-        <p> <li role="presentation" class="active"><%= link_to 'Home', root_path %></li></p>
-        <p> <li role="presentation"> <%= link_to 'Log-In', new_user_session_path %></li></p>
-        <p> <li role="presentation"> <%= link_to 'Signup', new_user_registration_path %></li></p>
-         <p> <li role="presentation"> <%= link_to 'Search', searches_path %></li></p>
-<% else %>
-        <p> <li role="presentation" class="active"><%= link_to 'Home', root_path %></li></p>
-        <p> <li role="presentation" ><%= link_to 'Dashboard', dashboards_path %></li></p>
-        <p> <li role="presentation" ><%= link_to 'Time tracking', posts_path %></li></p>
-        <p> <li role="presentation" ><%= link_to 'Take Leave', leavedays_path %></li> </p>
-        <p> <li role="presentation"> <%= link_to 'Profile', edit_user_registration_path %></li></p>
-        <p> <li role="presentation"> <%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li></p>
-<% end %>
-</nav>
-</div>
-</ul>
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <%= link_to 'Time Tracker', root_path, class: "navbar-brand topnav" %>   
+            </div>
 
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                <% unless current_user %>
+                    <li>
+                        <%= link_to 'Login', new_user_session_path %>
+                    </li>
+                    <li>
+                       <%= link_to 'Signup', new_user_registration_path %>
+                    </li>
+                    
+                    <li>
+                        <%= link_to 'Search', searches_path %>
+                    </li>
+                    <% else %>
+                     <li>
+                      <%= link_to 'Dashboard', dashboards_path %>
+                    </li>
+                     <li>
+                      <%= link_to 'Time tracking', posts_path %>
+                    </li>
+                     <li>
+                       <%= link_to 'Take Leave', leavedays_path %></li>
+                    </li>
+
+                    <li>
+                      <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
+                    </li>
+                    <% end %>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+</nav>
+</ul>
 
 
 

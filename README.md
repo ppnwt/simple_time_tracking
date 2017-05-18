@@ -13,6 +13,8 @@ Configuration :
 
 * Ruby version 2.4.1
 
+* Rails version 5.0.2
+
 * Database creation : sqlite3
 
 * Deploy server : Heroku
