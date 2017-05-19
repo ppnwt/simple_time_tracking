@@ -3,6 +3,13 @@
 		<div class="container-page">				
 			<div class="col-md-12">	
         <h1>Leaveday </h1> <i>Show all leavedays and leavetype</i>
+        <div class="pull-right range-query">
+                      <%= form_tag leavedays_path, method: :get do %>
+                       <%= label_tag 'Leave type' %>
+                      <%= text_field_tag :search, params[:search], :placeholder => "Enter leavetype.." %>
+                      <%= submit_tag 'Search', class: 'btn search-button' %>
+                      <% end %>
+                </div>
           <div class="media">
               <div class="media-body">
                 <table class="table table-hover">
@@ -22,8 +29,10 @@
   </thead>
 
   <tbody>
- 
+                
+
   <%= bar_chart @leavedays.group(:leavetype).sum(:duration), min: 0, max: 10, label: "Amount", download: true, xtitle: "Amount" %>
+   
 <br>
 <%= link_to 'New Leaveday', new_leaveday_path, class:"btn btn-default" %>
 <br>
