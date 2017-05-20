@@ -15,9 +15,9 @@
 
                       <%= form_tag posts_path, method: :get do %>
                        <%= label_tag 'Date from' %>
-                      <%= text_field_tag 'search[date_from]', @search.date_from,  :placeholder => "YYYY-MM-DD" %>
+                      <%= text_field_tag 'search[date_from]', @search.date_from,  :placeholder => "YYYY-MM-DD", :required => true %>
                       <%= label_tag 'Date to' %>
-                      <%= text_field_tag 'search[date_to]', @search.date_to,  :placeholder => "YYYY-MM-DD" %>
+                      <%= text_field_tag 'search[date_to]', @search.date_to,  :placeholder => "YYYY-MM-DD", :required => true %>
                       <%= submit_tag 'Search', class: 'btn search-button' %>
                       <% end %>
 
@@ -31,7 +31,7 @@
                     	<p><i>Description: Input leave type following the examples below </i></p><br>
                       <%= form_tag leavedays_path, method: :get do %>
                        <%= label_tag 'Leave type' %>
-                      <%= text_field_tag :search, params[:search], :placeholder => "Annual Leave" %>
+                      <%= text_field_tag :search, params[:search], :placeholder => "Annual Leave", :required => true %>
                       <%= submit_tag 'Search', class: 'btn search-button' %>
                       <% end %>
                       <br>
