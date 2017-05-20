@@ -2,7 +2,7 @@
     <section class="container">
 		<div class="container-page">				
 			<div class="col-md-12">	
-        <h1>Time Tracking </h1><i>Show all data</i>
+        <h1>Time Tracking </h1><i>Show all users data</i>
          <div class="pull-right range-query">
                       <%= form_tag posts_path, method: :get do %>
                        <%= label_tag 'Description' %>
@@ -27,7 +27,7 @@
 
   <tbody>
                 
-<%= line_chart @posts.group(:date).count, label: "All employee work today: ", download: true, xtitle: "Date", ytitle: "Employees" %>
+<%= line_chart @posts_current.group(:date).count, label: "All employee work today: ", download: true, xtitle: "Date", ytitle: "Employees" %>
 
   <br>
   <%= link_to 'Add Working time', new_post_path, class:"btn btn-default" %>

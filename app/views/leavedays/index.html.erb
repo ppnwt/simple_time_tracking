@@ -32,8 +32,9 @@
 
   <tbody>
                 
+  <br>
 
-  <%= bar_chart @leavedays.group(:leavetype).sum(:duration), min: 0, max: 10, label: "Amount", download: true, xtitle: "Amount" %>
+  <%= bar_chart @leavedays_current.group(:leavetype).sum(:duration), min: 0, max: 10, label: "Amount", download: true, xtitle: "Day" %>
    
 <br>
 <%= link_to 'New Leaveday', new_leaveday_path, class:"btn btn-default" %>
@@ -48,7 +49,6 @@
         <td><%= leaveday.description %></td>
         <td><%= leaveday.user.email %></td>
         <td><%= link_to 'Show', leaveday, class:'btn btn-sm btn-primary' %></td>
-        <td><%= link_to 'Edit', edit_leaveday_path(leaveday), class:'btn btn-sm btn-info' %></td>
         <td><%= link_to 'Delete', leaveday, class:'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
        
