@@ -6,7 +6,7 @@ class LeavedaysController < ApplicationController
   # GET /leavedays.json
   def index
     @leavedays = Leaveday.where(["leavetype LIKE ?", "%#{params[:search]}%"])
-    @leavedays_current = Leaveday.where(user_id: current_user.id).order("created_at DESC")
+    @leavedays_current = Leaveday.where(user_id: current_user.id)
    # @leavedays = Leaveday.all.order("created_at DESC")
   end
 

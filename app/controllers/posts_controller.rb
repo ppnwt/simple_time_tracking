@@ -10,7 +10,7 @@ class PostsController < ApplicationController
         # @posts = @search.scope
         @posts = Post.where(["description LIKE ?", "%#{params[:search]}%"])
         # @posts = Post.search(params[:search])
-         @posts_current = Post.where(user_id: current_user.id).order("created_at DESC")
+         @posts_current = Post.where(user_id: current_user.id)
   end
 
  
