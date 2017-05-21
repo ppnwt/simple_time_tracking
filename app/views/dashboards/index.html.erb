@@ -8,7 +8,11 @@
                     <p><h4> <i>Welcome back ... </i></p></h4><br>
                                         
                     <hr>
-                            
+                    
+                    <%= line_chart @posts.group(:date).count, label: "All employee work today: ", download: true, min: 0, max: 5 %>
+                    <br>
+                    <%= column_chart @leavedays.group(:leavetype).sum(:duration), min: 1, max: 4, label: "Summary", download: true, xtitle: "Day", width: "400px", height: "300px" %>
+
                     <div class="pull-left range-query">
                   	<p><h3> <i>Leaveday search  </i></p></h3><br>
                     	<p><i>Description: Input leave type following the examples below </i></p><br>
@@ -26,6 +30,8 @@
                      
                     </div>
                
+
+
    
 </div>
     </section>
