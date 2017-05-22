@@ -38,11 +38,6 @@ gem 'groupdate'
 gem 'bootstrap'
 gem 'jquery-ui-rails'
 
-gem 'rails-assets-sweetalert'
-gem 'sweet-alert'
-gem 'sweet-alert-confirm'
-
-
 source 'https://rails-assets.org'
   gem 'rails-assets-bootstrap', '4.0.0.alpha6'
   gem 'rails-assets-jquery'
