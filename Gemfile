@@ -30,10 +30,14 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
 gem 'devise'
 gem 'chartkick'
 gem 'googlecharts', '~> 1.6', '>= 1.6.12'
 gem 'groupdate'
+
+
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
