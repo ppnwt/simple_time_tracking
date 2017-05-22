@@ -21,6 +21,7 @@
                     <li>
                         <%= link_to 'Login', new_user_session_path %>
                     </li>
+                    
                     <li>
                        <%= link_to 'Signup', new_user_registration_path %>
                     </li>
@@ -29,16 +30,19 @@
                      <li>
                       <%= link_to 'Dashboard', dashboards_path %>
                     </li>
+
                      <li>
                       <%= link_to 'Time tracking', posts_path %>
                     </li>
+
                      <li>
-                       <%= link_to 'Take Leave', leavedays_path %></li>
+                       <%= link_to 'Take Leave', leavedays_path %>
                     </li>
-                      <li>
+
                     <li>
                       <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
                     </li>
+
                     <% end %>
                 </ul>
             </div>

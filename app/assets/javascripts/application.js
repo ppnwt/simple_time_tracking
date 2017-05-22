@@ -17,7 +17,6 @@
 //= require Chart.bundle
 //= require highcharts
 //= require chartkick
-//= require jsapi
 //= require sweet-alert
 //= require sweet-alert-confirm
 //= require_tree .

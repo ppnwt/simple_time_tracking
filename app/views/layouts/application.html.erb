@@ -4,6 +4,10 @@
     <title>Time Tracking</title>
     <meta name="viewport" content="width=device-width", initial-scale-1, shrink-to-fit=no>
     <%= csrf_meta_tags %>
+        <%= javascript_include_tag "//www.google.com/jsapi" %>
+        <%= javascript_include_tag 'application' %>
+        <%= javascript_include_tag "application", "chartkick" %>
+        
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'sweetalert.min.js' %>
     <%= stylesheet_link_tag 'sweetalert.css' %>
@@ -34,8 +38,6 @@
   <body>
   
     <%= render 'shared/header' %>
-     <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag "application", "chartkick" %>
     <%= yield :charts_js %> 
     <%= yield %>
     <%= render 'shared/footer' %>
