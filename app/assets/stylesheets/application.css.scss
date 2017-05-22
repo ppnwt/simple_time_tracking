@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   color: #333;
   font-family: 'Lato', serif;
+  height: 100vh;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
@@ -170,3 +171,10 @@ p.copyright {
 .navbar-brand {
     padding: 25px 50px 75px 100px;
 }
+
+
+/*
+ *= require_self
+ *= require sweetalert
+ *= require_tree .
+ */
