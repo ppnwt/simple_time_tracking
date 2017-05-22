@@ -36,9 +36,11 @@ gem 'chartkick'
 gem 'googlecharts', '~> 1.6', '>= 1.6.12'
 gem 'groupdate'
 gem 'bootstrap'
-
-
 gem 'jquery-ui-rails'
+
+gem 'rails-assets-sweetalert'
+gem 'sweet-alert'
+gem 'sweet-alert-confirm'
 
 
 source 'https://rails-assets.org'

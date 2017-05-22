@@ -1,8 +1,6 @@
-
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      body {
-  font-family: "Open Sans", sans-serif;
+<style>
+body {
+  font-family: "Lato", sans-serif;
   height: 100vh;
   background: url("http://i.imgur.com/HgflTDf.jpg") 50% fixed;
   background-size: cover;
@@ -159,14 +157,7 @@ footer a, footer a:link {
   color: #fff;
   text-decoration: none;
 }
-
-    </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-</head>
-
-<body>
+</style>
     <div class="wrapper">
    
   <%= form_for(resource, as: resource_name, url: session_path(resource_name),:html => {:class => 'login'}) do |f| %>
@@ -175,21 +166,20 @@ footer a, footer a:link {
 <div class="field">
 <i class="fa fa-user"></i>
 <%= f.label :email %><br />
-<%= f.email_field :email, autofocus: true %>
+<%= f.email_field :email, autofocus: true, :placeholder => 'Email Address' %>
 </div>
 
 <div class="field">
 <i class="fa fa-key"></i>
 <%= f.label :password %><br />
-<%= f.password_field :password, autocomplete: "off" %>
+<%= f.password_field :password, autocomplete: "off", :placeholder => 'Password' %>
 </div>
 
-<% if devise_mapping.rememberable? -%>
-<div class="field">
-<%= f.check_box :remember_me %>
-<%= f.label :remember_me %>
-</div>
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
 <% end -%>
+
+
 
 <div class="actions">
 <%= f.submit "Log in", class:"btn btn-primary" %>
@@ -197,9 +187,7 @@ footer a, footer a:link {
 <%= render "devise/shared/links" %>
 <% end %>
 </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="js/index.js"></script>
 
 
 

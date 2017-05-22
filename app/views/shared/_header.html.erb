@@ -24,7 +24,6 @@
                     <li>
                        <%= link_to 'Signup', new_user_registration_path %>
                     </li>
-
                     
                     <% else %>
                      <li>
@@ -46,18 +45,27 @@
             <!-- /.navbar-collapse -->
         </div>
 
-<% if flash[:notice] %>
-    <div class="alert alert-success">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Success!</strong> Indicates a successful or positive action.
-    </div>
-
-<% elsif flash[:alert] %>
-    <div class="alert alert-warning">
-     <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Warning!</strong> You need to sign in or sign up before continuing.
-    </div>
-<% end %>
         <!-- /.container -->
     </nav>
 </nav>
+
+
+<% if flash[:notice] %>
+    <script>
+            swal({
+            title: "Success!",
+            text: "Indicates a successful or positive action.",
+            type: "success",
+            confirmButtonText: "OK"
+            });
+            </script>
+<% elsif flash[:alert] %>
+   <script>
+        swal({
+        title: "Warning!",
+        text: "Warning! You need to sign in or sign up before continuing.",
+        type: "warning",
+        confirmButtonText: "OK"
+        });
+</script>
+<% end %>

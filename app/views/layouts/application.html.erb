@@ -7,8 +7,15 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag "application", "chartkick" %>
+    <%= javascript_include_tag 'sweetalert.min.js' %>
+    <%= stylesheet_link_tag 'sweetalert.css' %>
 
-   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
 
    <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -27,17 +34,12 @@
   </head>
 
   <body>
+  
     <%= render 'shared/header' %>
     <%= yield :charts_js %> 
-    
     <%= yield %>
     <%= render 'shared/footer' %>
 
-     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+
   </body>
 </html>
