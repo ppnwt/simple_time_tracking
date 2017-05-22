@@ -3,6 +3,16 @@
 		<div class="container-page">				
 			<div class="col-md-6">
 
+       <style>
+         body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background: url("http://i.imgur.com/HgflTDf.jpg") 50% fixed;
+  background-size: cover;
+}
+        </style>
+
+
 <h2>Resend unlock instructions</h2>
 
 <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>

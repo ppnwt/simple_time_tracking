@@ -1,7 +1,8 @@
 <div class="container-fluid">
     <section class="container">
 		  <div class="container-page">		
-     	<div class="col-md-12">	
+     	<div class="col-lg-12">	
+        <div class="row">
            
 
                     <h1> Dashboard page<h1>
@@ -9,11 +10,14 @@
                                         
                     <hr>
                     
+                    <p><h4> <i>Employee day working </i></p></h4>
                     <%= line_chart @posts.group(:date).count, label: "All employee work today: ", download: true, min: 0, max: 5 %>
                     <br>
-                    <%= column_chart @leavedays.group(:leavetype).sum(:duration), min: 1, max: 4, label: "Summary", download: true, xtitle: "Day", width: "400px", height: "300px" %>
+                    <p><h4> <i>Employee leaveday used</i></p></h4>
+                    <%= column_chart @leavedays.group(:leavetype).sum(:duration), min: 1, max: 4, label: "Summary", download: true, width: "400px", height: "300px" %>
 
-                    <div class="pull-left range-query">
+
+                   <div class="pull-left range-query">
                   	<p><h3> <i>Leaveday search  </i></p></h3><br>
                     	<p><i>Description: Input leave type following the examples below </i></p><br>
                       <%= form_tag leavedays_path, method: :get do %>
@@ -29,13 +33,11 @@
                         </ul>
                      
                     </div>
-               
-
-
-   
+                    </div>
+              </div>
 </div>
     </section>
             </div>
 
 
-                    
+                 

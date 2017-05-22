@@ -35,9 +35,13 @@ gem 'devise'
 gem 'chartkick'
 gem 'googlecharts', '~> 1.6', '>= 1.6.12'
 gem 'groupdate'
+gem 'bootstrap'
 
 
-
+source 'https://rails-assets.org'
+  gem 'rails-assets-bootstrap', '4.0.0.alpha6'
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-tether'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
