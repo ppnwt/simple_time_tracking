@@ -38,6 +38,9 @@ gem 'groupdate'
 gem 'bootstrap'
 
 
+gem 'jquery-ui-rails'
+
+
 source 'https://rails-assets.org'
   gem 'rails-assets-bootstrap', '4.0.0.alpha6'
   gem 'rails-assets-jquery'

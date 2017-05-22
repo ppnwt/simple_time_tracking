@@ -24,6 +24,7 @@
                     <li>
                        <%= link_to 'Signup', new_user_registration_path %>
                     </li>
+
                     
                     <% else %>
                      <li>
@@ -35,7 +36,7 @@
                      <li>
                        <%= link_to 'Take Leave', leavedays_path %></li>
                     </li>
-
+                      <li>
                     <li>
                       <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
                     </li>
