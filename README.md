@@ -48,3 +48,7 @@ Updated 22/05/18
 * Added new index homepage
 
 * Add new Dashboard Layout
+
+* Add new Login UI Layout
+
+* Add new Signup UI Layout
