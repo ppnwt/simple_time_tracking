@@ -27,8 +27,6 @@ Updated 16/05/18
 
 * Added dashboard page
 
-* Added Search bar period time 
-
 * Added Search bar leave day (leave type)
 
 
@@ -42,3 +40,11 @@ Updated 18/05/18
 * Added Chartkick to index pages 
 
 * Still bugging in search bar (time range searching)
+
+
+
+Updated 22/05/18
+
+* Added new index homepage
+
+* Add new Dashboard Layout
