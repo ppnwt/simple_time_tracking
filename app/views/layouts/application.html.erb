@@ -4,10 +4,13 @@
     <title>Time Tracking</title>
     <meta name="viewport" content="width=device-width", initial-scale-1, shrink-to-fit=no>
     <%= csrf_meta_tags %>
+
+    <!-- Chart.js-->
         <%= javascript_include_tag "//www.google.com/jsapi" %>
         <%= javascript_include_tag 'application' %>
         <%= javascript_include_tag "application", "chartkick" %>
-        
+
+<!-- Sweetalert -->
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'sweetalert.min.js' %>
     <%= stylesheet_link_tag 'sweetalert.css' %>
@@ -15,6 +18,8 @@
     <!-- jQuery -->
      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
+
+<!-- Fonts and jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
