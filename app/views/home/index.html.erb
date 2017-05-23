@@ -1,32 +1,28 @@
  <!-- Header -->
     <div class="intro-header">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Track time working</h1>
-                        <h3>Let you log the time you spend on a work</h3>
+                        <h1 class="animated fadeInUp">Track time working</h1>
+                        <h3 class="animated fadeInUp">Let you log the time you spend on a work</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             
                           <% unless current_user %>
                             
                             <li>
-                             <span class="network-name"><%= link_to 'Start tracking!!', new_user_session_path, class: 'btn btn-danger' %></span>
+                             <span class="network-name animated fadeInUp"><%= link_to 'Start tracking!!', new_user_session_path, class: 'btn btn-danger' %></span>
                             </li>
                             <% else %>
                             <li>
-                             <span class="network-name"><%= link_to 'Start tracking!!', posts_path, class: 'btn btn-danger' %></span>
+                             <span class="network-name animated fadeInUp"><%= link_to 'Start tracking!!', posts_path, class: 'btn btn-danger' %></span>
                             </li>
-                            
                           <% end %>
-
                         </ul>
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
 
@@ -41,7 +37,7 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Recording realtime<br>Working hours Anywhere</h2>
+                    <h2>Recording realtime<br>Working hours Anywhere</h2>
                     <p class="lead">Make sure you will not miss great time moments. this application can be help you </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
