@@ -4,62 +4,65 @@ A Simple Time Tracking Application
 
 Follow up here [Time Tracker](https://simple-time-tracker.herokuapp.com)  A simple tracking your time and deploy to [Heroku](https://www.heroku.com) for free ! :+1:
 
+
+
 ### Features :
 
 * Sign-up , Sign-in , Login , Logout system with devise gem
-* Can add Timein , Timeout 
-* Can Take leave  Annual leave, Personal leave , Sick leave
-* Search bar time durations
-* Display data with BarChart, LineChart (Chartkick)
+* Can add Timein , Timeout and show up your time 
+* Can Take leave  Annual leave, Personal leave , Sick leave and durations
+* Search bar time specify and range of time 
+* Display data with Chart (e.g Column,Line Chart)
 
 
 
 ### Stuff used to make this:
 
-* [Ruby](https://www.ruby-lang.org/en/) Ruby version 2.4.1
+* [Ruby](https://www.ruby-lang.org/en/) Ruby version 2.4.1.
 
-* [Rails](http://rubyonrails.org/) Rails version 5.0.2
+* [Rails](http://rubyonrails.org/) Rails version 5.0.2.
 
-* [Sqlite3](https://www.sqlite.org/) Database creation : sqlite3
+* [Sqlite3](https://www.sqlite.org/) Database creation : sqlite3.
 
-* [Devise](https://github.com/plataformatec/devise) Devise gem on Github
+* [Devise](https://github.com/plataformatec/devise) Devise gem on Github.
 
-* [Chartkick](http://chartkick.com/) Create beautiful Javascript charts with one line of Ruby
+* [Chartkick](http://chartkick.com/) Create beautiful Javascript charts with one line of Ruby.
 
-* [Heroku](https://www.heroku.com) Deploy server : Heroku
+* [Heroku](https://www.heroku.com) Deploy server : Heroku.
 
 
 
 ### Logs Updated:
 
+*I will try to update my repo in everyday and notes somethings i did.*
 
-Updated 16/05/2017
+
+### Updated 16/05/2017
 
 * Added dashboard page
 
-* Added Search bar leave day (leave type)
-
-* (** Search bar has Removed, because found more bugs )
+* ~~Added Search bar leave day (leave type)~~
 
 
 
-Updated 18/05/2017
+
+### Updated 18/05/2017
 
 * Added new Navbar UI
 
 * Added Lato font, and added CSS to all pages
 
-* Added Chartkick to index pages 
+* Added Chartkick to index pages  
 
 * Still bugging in search bar (time range searching)
 
 
 
-Updated 22/05/2017
+### Updated 22/05/2017
 
 * Added new index homepage
 
-* Add new Dashboard Layout
+* Add new Dashboard Layout *(Move Chart display to dashboard)*
 
 * Add new Login UI Layout
 
@@ -67,7 +70,7 @@ Updated 22/05/2017
 
 
 
-Updated 23/05/2017
+### Updated 23/05/2017
 
 * Added Flash and Alert messages box (Sweetaleat)
 
