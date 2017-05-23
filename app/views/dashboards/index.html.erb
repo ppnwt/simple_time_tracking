@@ -9,25 +9,11 @@
                     <hr>
                     
                     <p><h4> <i>Employee day working </i></p></h4>
-                    <%= line_chart @posts.group(:date).count, label: "All employee work today: ", download: true, min: 0, max: 5 %>
+                    <%= line_chart @posts.group(:date).count, label: "All employee work today: ", download: true, min: 0, max: 20 %>
                     <br>
                     <p><h4> <i>Employee leaveday used</i></p></h4>
-                    <%= column_chart @leavedays.group(:leavetype).sum(:duration), label: "Summary", download: true, width: "400px", height: "300px" %>
+                    <%= column_chart @leavedays.group(:leavetype).sum(:duration), label: "Summary", download: true, min: 0, max: 20, width: "400px", height: "300px" %>
 
-                  	<p><h3> <i>Leaveday search  </i></p></h3><br>
-                    	<p><i>Description: Input leave type following the examples below </i></p><br>
-                      <%= form_tag leavedays_path, method: :get do %>
-                       <%= label_tag 'Leave type' %>
-                      <%= text_field_tag :search, params[:search], :placeholder => "Annual Leave", :required => true %>
-                      <%= submit_tag 'Search', class: 'btn search-button' %>
-                      <% end %>
-                      <br>
-                        <ul>
-                         <li> Annual Leave</li><br>
-                          <li> Sick Leave</li><br>
-                          <li>Personal Leave  </li><br>
-                        </ul>
-       
       </div>
 
     </div> <!-- /container -->

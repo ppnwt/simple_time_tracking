@@ -2,7 +2,9 @@
 
 A Simple Time Tracking Application
 
-Features :
+Follow up here [Time Tracker](https://simple-time-tracker.herokuapp.com)  A simple tracking your time and deploy to [Heroku](https://www.heroku.com) for free ! :+1:
+
+### Features :
 
 * Sign-up , Sign-in , Login , Logout system with devise gem
 * Can add Timein , Timeout 
@@ -10,20 +12,28 @@ Features :
 * Search bar time durations
 * Display data with BarChart, LineChart (Chartkick)
 
-Configuration :
-
-* Ruby version 2.4.1
-
-* Rails version 5.0.2
-
-* Database creation : sqlite3
-
-* Deploy server : Heroku
 
 
+### Stuff used to make this:
+
+* [Ruby](https://www.ruby-lang.org/en/) Ruby version 2.4.1
+
+* [Rails](http://rubyonrails.org/) Rails version 5.0.2
+
+* [Sqlite3](https://www.sqlite.org/) Database creation : sqlite3
+
+* [Devise](https://github.com/plataformatec/devise) Devise gem on Github
+
+* [Chartkick](http://chartkick.com/) Create beautiful Javascript charts with one line of Ruby
+
+* [Heroku](https://www.heroku.com) Deploy server : Heroku
 
 
-Updated 16/05/18
+
+### Logs Updated:
+
+
+Updated 16/05/2017
 
 * Added dashboard page
 
@@ -33,7 +43,7 @@ Updated 16/05/18
 
 
 
-Updated 18/05/18
+Updated 18/05/2017
 
 * Added new Navbar UI
 
@@ -45,7 +55,7 @@ Updated 18/05/18
 
 
 
-Updated 22/05/18
+Updated 22/05/2017
 
 * Added new index homepage
 
@@ -57,7 +67,7 @@ Updated 22/05/18
 
 
 
-Updated 23/05/18
+Updated 23/05/2017
 
 * Added Flash and Alert messages box (Sweetaleat)
 
