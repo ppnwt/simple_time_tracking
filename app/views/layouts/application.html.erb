@@ -4,11 +4,17 @@
     <title>Time Tracker</title>
     <meta name="viewport" content="width=device-width", initial-scale-1, shrink-to-fit=no>
     <%= csrf_meta_tags %>
+    
+       <!-- Prevent Routing Error when Signout :method DELETE -->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
 
 
-    <!-- Prevent Routing Error when Signout :method DELETE -->
 
-    <%= javascript_include_tag 'rails' %>
+     <!-- Datepicker-->
+      <%= javascript_include_tag 'jquery-ui' %>
+      <%= stylesheet_link_tag    'jquery-ui' %>
+
 
     <!-- Chart.js-->
         <%= javascript_include_tag "//www.google.com/jsapi" %>

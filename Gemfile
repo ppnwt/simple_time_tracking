@@ -31,11 +31,16 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 
+
 gem 'devise'
 gem 'chartkick'
 gem 'googlecharts', '~> 1.6', '>= 1.6.12'
 gem 'groupdate'
 gem 'bootstrap'
+
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 gem 'rails-assets-sweetalert'
