@@ -29,6 +29,8 @@ Updated 16/05/18
 
 * Added Search bar leave day (leave type)
 
+* (** Search bar has Removed, because found more bugs )
+
 
 
 Updated 18/05/18
@@ -52,3 +54,13 @@ Updated 22/05/18
 * Add new Login UI Layout
 
 * Add new Signup UI Layout
+
+
+
+Updated 23/05/18
+
+* Added Flash and Alert messages box (Sweetaleat)
+
+* Added a little animated javascript to index page 
+
+
