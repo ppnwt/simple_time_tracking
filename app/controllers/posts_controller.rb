@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-         # @posts = Post.where(["description LIKE ?", "%#{params[:search]}%"])
+         @posts = Post.where(["description LIKE ?", "%#{params[:search]}%"])
          @posts_current = Post.where(user_id: current_user.id) 
         # @search = PostSearch.new(params[:search])
         # @posts = @search.scope
