@@ -29,6 +29,38 @@ Follow up here [Time Tracker](https://simple-time-tracker.herokuapp.com)  A simp
 * [Heroku](https://www.heroku.com) Deploy server : Heroku.
 
 
+# Get Started
+
+Make sure Ruby is installed on your system. Fire command prompt and run command:
+
+`ruby -v`
+
+Make sure Rails is installed
+
+`rails -v`
+
+
+# Installation
+
+*You must clone this repository before*
+
+1.) Install all dependencies
+
+`bundle install`
+
+
+2.) Create db and migrate schema
+
+`rake db:create`
+`rake db:migrate`
+
+3.) Now run your application
+
+`rails s`
+
+
+
+
 
 ### Logs Updated:
 
