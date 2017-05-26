@@ -1,6 +1,4 @@
-# README
-
-A Simple Time Tracking Application
+# Simple Time Tracking Application
 
 Follow up here [Time Tracker](https://simple-time-tracker.herokuapp.com)  A simple tracking your time and deploy to [Heroku](https://www.heroku.com) for free ! :+1:
 
@@ -72,8 +70,16 @@ Follow up here [Time Tracker](https://simple-time-tracker.herokuapp.com)  A simp
 
 ### Updated 23/05/2017
 
-* Added Flash and Alert messages box (Sweetaleat)
+* Added Flash and Alert messages box (SweetAlert)
 
 * Added a little animated javascript to index page 
+
+
+
+### Updated 25/05/2017
+
+* Added Dropdown Menu at top nav
+
+
 
 
