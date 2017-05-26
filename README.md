@@ -46,18 +46,20 @@ Make sure Rails is installed
 
 1.) Install all dependencies
 
-`bundle install`
+`$ bundle install`
 
 
 2.) Create db and migrate schema
 
-`rake db:create`
-`rake db:migrate`
+```
+
+$ rake db:create
+$ rake db:migrate
+```
 
 3.) Now run your application
 
 `rails s`
-
 
 
 
