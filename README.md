@@ -8,7 +8,7 @@ Follow up here [Time Tracker](https://simple-time-tracker.herokuapp.com)  A simp
 
 * Sign-up , Sign-in , Login , Logout system with devise gem
 * Can add Timein , Timeout and show up your time 
-* Can Take leave  Annual leave, Personal leave , Sick leave and durations
+* Can Take leave  Annual Leave, Personal Leave , Sick Leave and durations
 * Search bar time specify and range of time 
 * Display data with Chart (e.g Column,Line Chart)
 
@@ -113,6 +113,12 @@ $ rake db:migrate
 ### Updated 25/05/2017
 
 * Added Dropdown Menu at top nav
+
+
+
+### Updated 28/05/2017
+
+* Fix validates (Can't be blank )Leaveday, Time tracking pages 
 
 
 
