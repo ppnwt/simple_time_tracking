@@ -121,5 +121,7 @@ $ rake db:migrate
 * Fix validates (Can't be blank )Leaveday, Time tracking pages 
 
 
+### Updated 02/06/2017
 
-
+* Added gems and config Rspec, Capybara , Shoulda matcher, Factory girl
+ 

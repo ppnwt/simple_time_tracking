@@ -11,5 +11,9 @@ class Leaveday < ApplicationRecord
     # Validates Duration can't be blank
     validates :duration, presence: true
 
+    # Validates Duration can't be blank
+    validates :user_id, presence: true
+    
+
 
 end
