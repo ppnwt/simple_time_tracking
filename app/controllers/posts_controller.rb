@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   
   # GET /posts
@@ -7,14 +7,8 @@ class PostsController < ApplicationController
   def index
          @posts = Post.where(["description LIKE ?", "%#{params[:search]}%"])
          @posts_current = Post.where(user_id: current_user.id) 
-        # @search = PostSearch.new(params[:search])
-        # @posts = @search.scope
-        # @posts = Post.search(params[:search])
       
   end
-
- 
-
   # GET /posts/1
   # GET /posts/1.json
   def show
