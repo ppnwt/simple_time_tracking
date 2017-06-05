@@ -124,4 +124,10 @@ $ rake db:migrate
 ### Updated 02/06/2017
 
 * Added gems and config Rspec, Capybara , Shoulda matcher, Factory girl
+
+### Updated 05/06/2017
+
+* Added Features Annual Leave, Sick Leave, Personal Leave page to see spectify leavetype
+
+
  
