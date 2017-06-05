@@ -4,6 +4,8 @@
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( sweetalert.min.js )
 Rails.application.config.assets.precompile += %w( sweetalert.css )
+Rails.application.config.assets.precompile += %w( login.scss )
+Rails.application.config.assets.precompile += %w( home.scss )
 
 
 # Add additional assets to the asset load path

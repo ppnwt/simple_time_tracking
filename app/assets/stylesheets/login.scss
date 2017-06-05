@@ -1,10 +1,10 @@
 
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      body {
+
+//Login CSS
+body {
   font-family: "Lato", sans-serif;
   height: 100vh;
-  background: url("http://i.imgur.com/HgflTDf.jpg") 50% fixed;
+  background: url("http://www.bean-time.com/wp-content/uploads/2015/06/TimeTrackingBeaconHero.jpg") 50% fixed;
   background-size: cover;
 }
 
@@ -159,53 +159,3 @@ footer a, footer a:link {
   color: #fff;
   text-decoration: none;
 }
-
-    </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-</head>
-
-<div class="wrapper">
-
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, html: {class: 'login'}) do |f| %>
-  <%= devise_error_messages! %>
-
-
-  <div class="field">
-  <h3>Change Password</h3>
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <br />
-     <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %><br />
-     <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update", class:"btn btn-primary" %>
-  </div>
-<% end %>
-   </div>

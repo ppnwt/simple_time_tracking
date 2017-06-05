@@ -3,7 +3,6 @@ Rails.application.routes.draw do
     devise_for :users
       resources :posts
         resources :home
-          resources :searches
-            resources :dashboards
+          resources :dashboards
   root 'home#index'
 end
