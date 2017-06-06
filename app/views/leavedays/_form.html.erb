@@ -11,12 +11,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :datefrom %>
+    <%= f.label :FromDate %>
     <%= f.date_select :datefrom %>
   </div>
 
     <div class="field">
-    <%= f.label :dateto %>
+    <%= f.label :ToDate %>
     <%= f.date_select :dateto %>
   </div>
 
@@ -27,16 +27,16 @@
 
   <div class="field">
     <%= f.label :duration%>
-    <%= f.select :duration, [ '1','2','3','4','5','Other' ], :prompt => '-' %>
+    <%= f.select :duration, [ '1','2','3','4','5'], :prompt => '-' %>
      <%= f.label '(Day)' %>
   </div>
 
   <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description , cols: "70", rows: "10", :required => true %>
+    <i><%= f.text_area :description , cols: "50", rows: "5", :required => true, placeholder: 'Fill more description here..(1-120 Characters) ' %></i>
   </div>
 
   <div class="actions">
     <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <%= link_to 'Back', leavedays_path, class: 'btn btn-danger' %>
   </div>
 <% end %>
