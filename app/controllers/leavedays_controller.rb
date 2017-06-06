@@ -1,6 +1,6 @@
 class LeavedaysController < ApplicationController
   before_action :set_leaveday, only: [:show, :destroy]
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!
 
   # GET /leavedays
   # GET /leavedays.json
