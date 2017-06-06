@@ -1,13 +1,12 @@
 class LeavedaysController < ApplicationController
   before_action :set_leaveday, only: [:show, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index]
 
   # GET /leavedays
   # GET /leavedays.json
   def index
-    @leavedays = Leaveday.where(["leavetype LIKE ?", "%#{params[:search]}%"])
-    @leavedays_current = Leaveday.where(user_id: current_user.id)
-   # @leavedays = Leaveday.all.order("created_at DESC")
+    #@leavedays_current = Leaveday.where(user_id: current_user.id)
+    @leavedays = Leaveday.all.order("created_at DESC")
   end
 
   # GET /leavedays/1
