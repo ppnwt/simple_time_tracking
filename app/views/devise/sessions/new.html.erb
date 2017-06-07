@@ -163,29 +163,29 @@ footer a, footer a:link {
   <%= form_for(resource, as: resource_name, url: session_path(resource_name),:html => {:class => 'login'}) do |f| %>
    <h3>Login</h3>
    <hr>
-<div class="field">
-<i class="fa fa-user"></i>
-<%= f.label :email %><br />
-<%= f.email_field :email, autofocus: true, :placeholder => 'Email Address' %>
-</div>
+      <div class="field">
+      <i class="fa fa-user"></i>
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, :placeholder => 'Email Address' %>
+      </div>
 
-<div class="field">
-<i class="fa fa-key"></i>
-<%= f.label :password %><br />
-<%= f.password_field :password, autocomplete: "off", :placeholder => 'Password' %>
-</div>
+      <div class="field">
+      <i class="fa fa-key"></i>
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off", :placeholder => 'Password' %>
+      </div>
 
-<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
-<% end -%>
+      <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+        <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+      <% end -%>
 
 
-<div class="actions">
-<%= f.submit "Log in", class:"btn btn-primary" %>
-</div>
-<%= render "devise/shared/links" %>
-<% end %>
-</div>
+      <div class="actions">
+      <%= f.submit "Log in", class:"btn btn-primary" %>
+      </div>
+      <%= render "devise/shared/links" %>
+      <% end %>
+    </div>
 
 
 

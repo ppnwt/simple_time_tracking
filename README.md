@@ -129,5 +129,9 @@ $ rake db:migrate
 
 * Added Features Annual Leave, Sick Leave, Personal Leave page to see spectify leavetype
 
+### Updated 07/06/2017
+
+* Change layout Add timein timeout pages
+
 
  
