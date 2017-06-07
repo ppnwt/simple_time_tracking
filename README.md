@@ -52,7 +52,6 @@ Make sure Rails is installed
 2.) Create db and migrate schema
 
 ```
-
 $ rake db:create
 $ rake db:migrate
 ```
