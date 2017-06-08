@@ -1,0 +1,247 @@
+/* line 1, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+#notice_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(115, 216, 211, 0.85);
+}
+/* line 7, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+#notice_wrapper p {
+  padding: 2.75rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* line 19, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+#notice_wrapper_alert {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(208, 56, 56, 0.75);
+}
+/* line 25, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+#notice_wrapper_alert p {
+  padding: 2.75rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* line 40, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Lato', serif;
+  height: 100vh;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 50, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+p, ol, ul, td {
+  font-family: 'Lato', serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 59, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.topnav {
+  font-size: 14px;
+}
+
+/* line 63, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* line 68, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.intro-header {
+  padding-top: 50px;
+  /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(tt.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 77, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+/* line 83, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.intro-message > h1 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 5em;
+}
+
+/* line 89, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* line 95, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.intro-message > h3 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+  /* line 100, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  /* line 104, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+
+  /* line 108, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  ul.intro-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  /* line 114, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 118, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  .intro-divider {
+    width: 100%;
+  }
+}
+/* line 123, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* line 130, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.content-section-a {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+/* line 135, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.content-section-b {
+  padding: 50px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 141, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.section-heading {
+  margin-bottom: 30px;
+}
+
+/* line 145, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+
+/* line 151, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.banner {
+  padding: 100px 0;
+  color: #f8f8f8;
+  background: url(banner-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 158, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.banner h2 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 3em;
+}
+
+/* line 164, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.banner ul {
+  margin-bottom: 0;
+}
+
+/* line 168, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.banner-social-buttons {
+  float: right;
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  /* line 174, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  ul.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 181, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+  }
+
+  /* line 187, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  ul.banner-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  /* line 193, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+  ul.banner-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}
+/* line 198, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+footer {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+/* line 203, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+p.copyright {
+  margin: 15px 0 0;
+}
+
+/* line 208, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.navbar-header .navbar-brand {
+  max-width: 200px;
+}
+
+/* line 211, /Users/mac/Documents/simple_time_tracking/app/assets/stylesheets/application.css.scss */
+.navbar-brand {
+  padding: 25px 50px 75px 100px;
+}
+
+/*
+ *= require_self
+ *= require sweetalert
+ *= require jquery-ui
+ *= require_tree .
+ 
+ */
