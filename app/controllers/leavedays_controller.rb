@@ -5,8 +5,7 @@ class LeavedaysController < ApplicationController
   # GET /leavedays
   # GET /leavedays.json
   def index
-    #@leavedays_current = Leaveday.where(user_id: current_user.id)
-    @leavedays = Leaveday.all.order("created_at DESC")
+    @leavedays = Leaveday.where(user_id: current_user.id)
   end
 
   # GET /leavedays/1
