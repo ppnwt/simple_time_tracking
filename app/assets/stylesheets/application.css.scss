@@ -1,3 +1,41 @@
+#notice_wrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: rgba(115, 216, 211, 0.85);
+    p{
+        padding: 2.75rem 0;
+        text-align: center;
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
+
+
+#notice_wrapper_alert {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: rgba(208, 56, 56, 0.75);
+    p{
+        padding: 2.75rem 0;
+        text-align: center;
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+
 
 body {
   background-color: #fff;

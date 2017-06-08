@@ -1,5 +1,19 @@
+    
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+
+               <% if flash[:notice] %>
+                    <div id="notice_wrapper">
+                            <p class="notice" ><%= flash[:notice] %></p>
+                    </div>
+                <% elsif flash[:alert] %>
+                    <div id="notice_wrapper_alert">
+                        <p class="alert" ><%= flash[:alert] %></p>
+                </div>
+            <% end %>
+
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -11,6 +25,7 @@
                 </button>
              <span class="network-name">  <%= link_to 'Time Tracker', root_path, class: "navbar-brand topnav" %>   </span>
             </div>
+
 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,25 +87,5 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-            <% if flash[:notice] %>
-        <script>
-            swal({
-            title: "Success!",
-            text: "Indicates a successful or positive action.",
-            type: "success",
-            confirmButtonText: "OK"
-            });
-        </script>
-    <% elsif flash[:alert] %>
-        <script>
-            swal({
-            title: "Warning!",
-            text: "Warning! You need to sign in or sign up before continuing.",
-            type: "warning",
-            confirmButtonText: "OK"
-            });
-        </script>
-
-<% end %>
     </nav>
 </nav>

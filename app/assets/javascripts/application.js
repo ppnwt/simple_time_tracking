@@ -23,5 +23,20 @@
 //= require sweet-alert-confirm
 
 
+//Success flash message
+   $(document).ready(function(){
+        setTimeout(function(){
+          $('#notice_wrapper').fadeOut("slow", function(){
+            $(this).remove();
+          });
+        }, 3500);
+      });
 
-
+//Error flash message
+   $(document).ready(function(){
+        setTimeout(function(){
+          $('#notice_wrapper_alert').fadeOut("slow", function(){
+            $(this).remove();
+          });
+        }, 3500);
+      });
