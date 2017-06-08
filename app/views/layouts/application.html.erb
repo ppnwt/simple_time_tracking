@@ -51,6 +51,30 @@
   </head>
 
   <body>
+ 
+
+  <script>
+   $(document).ready(function(){
+        setTimeout(function(){
+          $('#notice_wrapper').fadeOut("slow", function(){
+            $(this).remove();
+          });
+        }, 3500);
+      });
+  </script>
+
+
+  <script>
+  //Error flash message
+   $(document).ready(function(){
+        setTimeout(function(){
+          $('#notice_wrapper_alert').fadeOut("slow", function(){
+            $(this).remove();
+          });
+        }, 3500);
+      });
+
+  </script>
   
     <%= render 'shared/header' %>
     <%= yield :charts_js %> 
