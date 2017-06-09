@@ -7,9 +7,9 @@ Follow up here [Time Tracker](https://simple-time-tracker.herokuapp.com)  A simp
 ### Features :
 
 * Sign-up , Sign-in , Login , Logout system with devise gem
-* Can add Timein , Timeout and show up your time 
+* Can add Timein , Timeout and show up your time
 * Can Take leave  Annual Leave, Personal Leave , Sick Leave and durations
-* Search bar time specify and range of time 
+* Search bar time specify and range of time
 * Display data with Chart (e.g Column,Line Chart)
 
 
@@ -103,9 +103,9 @@ $ rake db:migrate
 
 ### Updated 23/05/2017
 
-* Added Flash and Alert messages box (SweetAlert)
+* ~~Added Flash and Alert messages box (SweetAlert)~~
 
-* Added a little animated javascript to index page 
+* Added a little animated javascript to index page
 
 
 
@@ -117,7 +117,7 @@ $ rake db:migrate
 
 ### Updated 28/05/2017
 
-* Fix validates (Can't be blank )Leaveday, Time tracking pages 
+* Fix validates (Can't be blank )Leaveday, Time tracking pages
 
 
 ### Updated 02/06/2017
@@ -138,6 +138,3 @@ $ rake db:migrate
 ### Updated 08/06/2017
 
 * Add Notification fantasy flash message and alert message.
-
-
- 
