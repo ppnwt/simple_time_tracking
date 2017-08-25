@@ -140,3 +140,7 @@ $ rake db:migrate
 * Add Notification fantasy flash message and alert message.
 
 * Fixed bugs
+
+### Updated 05/07/17
+
+* Bug fixed
