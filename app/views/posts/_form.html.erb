@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-  
+
     <div class="field">
     <%= f.label :date %>
     <%= f.text_field :date, :value => Date.today, :disabled => true %>
@@ -22,7 +22,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :timeout %>
+    <%= f.label :timeout, "timeout" %>
     <%= f.time_select :timeout %>
   </div>
 
