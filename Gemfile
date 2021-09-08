@@ -28,7 +28,7 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
 end
 
-gem 'better_errors', '~> 2.4'
+gem 'better_errors', '~> 2.8'
 gem 'binding_of_caller', '~> 0.8.0'
 gem 'devise'
 gem 'chartkick'
